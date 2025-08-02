@@ -38,3 +38,7 @@ document.getElementById("shipBtn").addEventListener("click", function() {
 
     document.getElementById("result").innerText = "Result: " + result;
 })
+
+window.addEventListener('load', () => {
+    showPage('home-page');
+});
