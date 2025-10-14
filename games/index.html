@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>leksev software labs</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/98.css" />
+</head>
+<style>	
+	body {
+		zoom: 150%;
+	}
+	
+	body::before {
+		content: '';
+		background-image: url('imgs/background.png');
+		background-repeat: repeat;
+		background-size: 20% auto;
+		opacity: 0.4;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+</style>
+  
+<body>
+  <div class="window" style="margin: 0px auto; width: 30vw;">
+	<div class="title-bar" style="padding: 4px; display: flex; justify-content: center; align-items: center; gap: 5px;">
+		<a style="color: #ffffff;" href="https://leksevzip.github.io/">Home</a>
+		<a style="color: #ffffff;" href="https://leksevzip.github.io/games">Games</a>
+		<a style="color: #ffffff;" href="https://leksevzip.github.io/web">Web</a>
+	</div>
+  </div>
+  
+  <div class="window" style="margin: 10px auto; width: 30vw; height: auto">
+    <div class="title-bar">
+      <div class="title-bar-text">
+        Half-Baked Games, Inc.
+      </div>
+    </div>
+	<div class="window-body">
+		<div class="window" style="margin: 10px auto;">
+			<div class="title-bar">
+				<div class="title-bar-text">
+					Boring Game III
+				</div>
+			</div>
+			<div class="window-body">
+				<div class="field-border" style="padding: 10px">
+					In Boring Game III, you're a beta-tester who plays your friend's game, but there's something weird about it...
+				</div>
+				<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; flex-wrap: wrap;">
+					<div style="display: flex; gap: 3px; flex-wrap: wrap;">
+						<button onclick="window.open('bins/boring-game-iii.zip', '_blank');">Windows</button>
+					</div>
+					<div style="display: flex; gap: 3px; flex-wrap: wrap;">
+						<button onclick="window.open('https://leksevzip.itch.io/boring-game-iii', '_blank');">GameJolt Page</button>
+						<button onclick="window.open('https://leksevzip.itch.io/boring-game-iii', '_blank');">itch.io Page</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="window" style="margin: 10px auto;">
+			<div class="title-bar">
+				<div class="title-bar-text">
+					Boring Game 2
+				</div>
+			</div>
+			<div class="window-body">
+				<div class="field-border" style="padding: 10px">
+					Very boring and buggy game made in unity. Enjoy!
+				</div>
+				<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; flex-wrap: wrap;">
+					<div style="display: flex; gap: 3px; flex-wrap: wrap;">
+						<button onclick="window.open('bins/BG2.zip', '_blank');">Windows</button>
+						<button onclick="window.open('web/BG2/index.html', '_blank');">Web</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="window" style="margin: 10px auto;">
+			<div class="title-bar">
+				<div class="title-bar-text">
+					DON'T SUMMON THE FRANZ
+				</div>
+			</div>
+			<div class="window-body">
+				<div class="field-border" style="padding: 10px">
+					You are a former priest of the Catianity religion. After being shamefully expelled, you decided to take revenge on them by summoning their greatest enemy, the demon Franz.
+				</div>
+				<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; flex-wrap: wrap;">
+					<div style="display: flex; gap: 3px; flex-wrap: wrap;">
+						<button onclick="window.open('bins/DSTF.zip', '_blank');">Windows</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="status-bar">
+		<p class="status-bar-field" style="text-align: center;">copyright Half-Baked Games - a divison of leksev software labs, 2025</p>
+	</div>
+  </div>
+</body>
+</html>

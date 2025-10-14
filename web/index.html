@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>leksev software labs</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/98.css" />
+</head>
+<style>	
+	body {
+		zoom: 150%;
+	}
+	
+	body::before {
+		content: '';
+		background-image: url('imgs/background.png');
+		background-repeat: repeat;
+		background-size: 20% auto;
+		opacity: 0.4;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+</style>
+  
+<body>
+  <div class="window" style="margin: 0px auto; width: 30vw;">
+	<div class="title-bar" style="padding: 4px; display: flex; justify-content: center; align-items: center; gap: 5px;">
+		<a style="color: #ffffff;" href="https://leksevzip.github.io/">Home</a>
+		<a style="color: #ffffff;" href="https://leksevzip.github.io/games">Games</a>
+		<a style="color: #ffffff;" href="https://leksevzip.github.io/web">Web</a>
+	</div>
+  </div>
+  
+  <div class="window" style="margin: 10px auto; width: 30vw; height: auto">
+    <div class="title-bar">
+      <div class="title-bar-text">
+        1PO Networks
+      </div>
+    </div>
+	<div class="window-body">
+		<div class="window" style="margin: 10px auto;">
+			<div class="title-bar">
+				<div class="title-bar-text">
+					Shippering Simulator
+				</div>
+			</div>
+			<div class="window-body">
+				<div class="field-border" style="padding: 10px">
+					Shippering Simulator! The only one infinite simulator of love pairings. Enjoy! Enter two names to see what they will produce.
+				</div>
+				<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; flex-wrap: wrap;">
+					<div style="display: flex; gap: 3px; flex-wrap: wrap;">
+						<input type="text" id="firstObj" placeholder="First object's name">
+						<input type="text" id="secondObj" placeholder="Second object's name">
+					</div>
+				</div>
+				<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; flex-wrap: wrap;">
+					<div style="display: flex; gap: 3px; flex-wrap: wrap;">
+						<button id="shipBtn">Ship it!</button>
+						<small id="result" style="font-size: 12px; margin-top: 4px; margin-left: 5px;">Result:</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="status-bar">
+		<p class="status-bar-field" style="text-align: center;">copyright 1PO Networks - a division of leksev software labs, 2025</p>
+	</div>
+  </div>
+  <script src="scripts/shipperingSimulator.js"></script>
+</body>
+</html>
